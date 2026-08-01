@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Araz;
+    src: url('/assets/font/B-Fonts/B\ Araz.ttf');
+}
+
+body{
+    text-align: center;
+    background-color: azure;
+    direction: rtl;
+    font-family: Araz;
+}
+
+.register-Section {
+    width: 420px;
+    padding: 30px;
+    text-align: right;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.register-Section h1{
+    font-family: "Irish Grover", system-ui;
+    display: inline-block;
+    background: linear-gradient(to right , #FAFF00 , #00E0FF);
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.13);
+    font-style:italic ;
+    font-weight: bolder;
+}
+.register-Section span{
+    color: red;
+    
+    
+}
+.form-Container{
+    text-align: center;
+}
+.form-Container .halfInput{
+    text-align: justify;
+    width: 45%; 
+    display: inline-block; 
+    margin-right: 10px;   
+    
+}
+.form-Container .halfInput input{
+   box-shadow: 10px 5px 6px 2px #505a05;
+    
+}
+.second-half {
+   direction: rtl;
+   text-align: right;
+    margin-bottom: 10px;
+
+}
+
+input{
+    border: none;
+    background:linear-gradient(to right,  rgb(193, 230, 8), #ffa500);
+    border-radius: 100px;
+    height: 25px;
+    width: 100%;
+    height: 30px;
+    font-family: inherit;
+    justify-content: left;
+   
+}
+.checkbox-section, .radio-section{  
+    text-align: justify;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.checkbox-section label{  
+    /* sub / super – Positions as subscript or superscript. */
+    vertical-align: super;   
+    font-size: 20px;
+}
+.checkbox-section input{  
+    width:20px;
+    vertical-align: sub;
+}
+/* The text decoration style */
+.textDecor{
+    text-decoration: underline;
+    text-decoration-color: #ffa500;
+}
+button{
+    width: 50%;
+    height: 30px;
+    background-color: #ffa500;
+    border-radius: 10px;
+    border: 1px solid  black;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: inherit;
+    
+}
+.second-half input::placeholder{
+    color: white;
+}
+
+.second-half input{
+    box-shadow: 10px 5px 6px 2px #8fdb0d inset;
+}
+button:hover{
+    box-shadow: 3px 4px 10px blanchedalmond inset;
+}
+button:focus{
+    background-color: #de2c10;
+}
+/* Media query responsive design */
+@media (max-width:390px) {
+    .register-Section {
+    width: 100%;
+    padding: 0;
+    }
+}

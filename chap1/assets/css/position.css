@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Arash;
+    src: url(/assets/font/B-Fonts/B\ Arash.ttf);
+}
+
+body {
+    font-family: Arash;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth ;
+}
+
+
+
+.staticBox {
+    background-color: greenyellow;
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.relativeBox {
+    background-color: rgb(13, 182, 229);
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 80%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+
+}
+
+.absoluteBox {
+    background-color: rgb(216, 213, 13);
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    z-index: -100;
+    /* z-index: 100; */
+}
+
+section {
+    position: relative;
+}
+
+.fixedBox {
+    background-color: rgb(20, 216, 13);
+    margin: 10px auto;
+    border: 2px solid rgb(247, 238, 238);
+    border-radius: 8px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+
+}
+
+.spacer {
+    
+    text-align: justify;
+    /* height: 1000px; */
+    color: rgb(137, 189, 235);
+}
+.stickyBox{
+    background-color: rgb(229, 13, 197);
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 80%;
+    position: sticky;
+    top:0;
+}
